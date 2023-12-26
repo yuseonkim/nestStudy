@@ -9,6 +9,8 @@ export class CreateMovieDTO{
     readonly year : number;
     // 배열 타입의 각각의 요소의 유효성 검사를 위해 해당 each:true 사용
     
+    
+    @IsOptional()
     @IsString({each:true})
     readonly genres : string[];
 }

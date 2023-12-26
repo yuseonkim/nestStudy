@@ -11,7 +11,7 @@ async function bootstrap() {
     new ValidationPipe({
       // DTO 형식 유효성 검사 싱기방기
       whitelist : true,
-      forbidNonWhitelisted: true,
+      forbidNonWhitelisted:true,
 
       // request 측 데이터타입 자동변환 
       transform : true,
