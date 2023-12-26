@@ -34,7 +34,7 @@ export class MoviesService {
         })
     }
 
-    update(movieData, movieId : number){
+    update(movieData : UpdateMovieDTO, movieId : number){
        const movie = this.getOne(movieId);
        this.deleteOne(movieId);
        this.movies.push({...movie,...movieData});
